@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <title> Portfolio </title>
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta charset="UTF-8">
+         <link rel="stylesheet" href="style.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="https://kit.fontawesome.com/4b11ac5a7b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id ="header">
+        <div class = "container" >
+        <nav>
+            <!-- <img src="images/logor.png" class="logo"> -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer <br> <br> <br></p>
+            <h1>Hey, I'm <span>Soumya </span> <br> <br>Gupta from INDIA</h1>
+        </div>
+    </div>
+</div>
+<!-- -------------about------------ -->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/img2.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me </h1>
+                <p>I'm Soumya Gupta persuing B.Tech at Jaypee University of Engineering and Technology, Guna</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>DSA </span><br>Java</li>
+                        <li><span>Web Development </span><br>creating/building websites</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>August - Current </span><br> Bharat-Intern Web Development Internship</li>
+                        <li><span>July - August </span><br> OctaNet Web Development Internship</li>
+                        <li><span>September - Current </span><br> Letsgrowmore Web Development Internship</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2021 - 2025 </span><br> B.Tech at Jaypee University of Engineering and Technology <br>8.6 CGPA</li>
+                        <li><span>2020-2021 </span><br> St. Benedict's School <br>94%</li>
+                        <li><span>2018-2019 </span><br> St. Benedict's School <br>88%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------services----------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development Internship</h2>
+                <p>I'm doing web development internship at Bharat-Intern, OctaNet and Letsgrowmore. Developed projects and some websites using html,css and javascript like Portfolio, To-do-list, etc.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- --------------portfolio-------------->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Landing Page</h3>
+                    <p>Created Landing Page using html and css by task given by OctaNet intership. Visit it from link available.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Portfolio</h3>
+                    <p>Created Portfolio using html, css and javascript. Visit it from link available.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/workk2.jpg">
+                <div class="layer">
+                    <h3>Netflix Page</h3>
+                    <p>Created a Netflix Page using html, css and javascript. Visit it from link available.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ---------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>soumyagupta1022@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 9770227599</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/My CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"> </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Soumya. Made by <i class="fa-regular fa-heart"></i> Soumya Gupta</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxXc7eQn68YJEg4trDG0PJbM_uYV1WJ15vCjaf0x8Fe9s1RpSenBRk_iLVrb-Anuv2U/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
